@@ -1,20 +1,16 @@
 import {Router} from "express";
-import Product from "../models/Product.js";
+
+import { createProduct, deleteProduct, getProductById, getProducts, updateProduct } from "../controllers/product.controller.js";
 
 const router = Router();
 
-router.get("/", async (req, res) => {
-    try {
+router.post("/", createProduct);
 
-        const products = await Product.find();
-        res.json(products);
+router.get("/", getProducts);
+router.get("/:id", getProductById);
 
-    } catch (error) {
+router.put("/:id", updateProduct);
 
-        console.log(error.message);
-        res.status(500).json({message: "Error al optener los productos"});
-
-    }
-})
+router.delete("/:id", deleteProduct);
 
 export default router;

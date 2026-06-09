@@ -45,3 +45,66 @@
    ```
 
 
+## Uso
+
+Una vez que el servidor esté en funcionamiento, puedes acceder a la API a través de `http://localhost:<PORT>/api`, donde `<PORT>` es el puerto que configuraste en tu archivo `.env`.
+
+
+### Obtener todos los productos
+
+metodo GET a `/api/products` para obtener una lista de todos los productos disponibles.
+
+response:
+
+```json
+[
+   {
+    "_id": "6a21...",
+    "nombre": "Aria",
+    "descripcion": "Print de ilustración digital de Aria Atreides. Impresión de calidad en papel de 200gr.",
+    "categoria": "Print",
+    "precio": 19.99,
+    "stock": 12,
+    "imagen": "../src/assets/imgs/600x400-1.png",
+    "imagenDetalle": "../src/assets/imgs/D1.png",
+    "__v": 0,
+    "createdAt": "2026-06-04T19:16:43.737Z",
+    "updatedAt": "2026-06-04T19:16:43.737Z"
+  }
+]
+```
+
+### Obtener un producto por ID
+
+metodo GET a `/api/products/:id` para obtener los detalles de un producto específico utilizando su ID.
+
+response:
+
+status 200:
+
+```json
+{
+    "_id": "6a21...",
+    "nombre": "Aria",
+    "descripcion": "Print de ilustración digital de Aria Atreides. Impresión de calidad en papel de 200gr.",
+    "categoria": "Print",
+    "precio": 19.99,
+    "stock": 12,
+    "imagen": "../src/assets/imgs/600x400-1.png",
+    "imagenDetalle": "../src/assets/imgs/D1.png",
+    "__v": 0,
+    "createdAt": "2026-06-04T19:16:43.737Z",
+    "updatedAt": "2026-06-04T19:16:43.737Z"
+}
+```
+
+status 404:
+
+```json
+{
+    "error": "Producto no encontrado"
+}
+```
+
+
+
