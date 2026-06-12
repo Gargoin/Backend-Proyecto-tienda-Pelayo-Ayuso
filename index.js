@@ -7,6 +7,7 @@ connectDB();
 import express from "express";
 
 import productRouter from "./src/routes/product.router.js";
+import authRouter from "./src/routes/auth.router.js";
 
 import cors from "cors";
 
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRouter);
+app.use("/api/auth", authRouter);
 
 const PORT = process.env.PORT || 3001;
 
