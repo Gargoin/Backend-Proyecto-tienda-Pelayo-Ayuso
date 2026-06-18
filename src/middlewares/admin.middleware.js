@@ -10,7 +10,7 @@ export const adminMiddleware = async (req, res, next) => {
         next();
 
     } catch (error) {
-        res.status(500).json({message: "Error del servidro"});
+        res.status(500).json({message: "Error del servidor"});
     }
 
 };
