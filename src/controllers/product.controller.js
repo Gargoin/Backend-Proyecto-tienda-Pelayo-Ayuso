@@ -4,7 +4,9 @@ export const getProducts = async (req, res) => {
 
     try {
 
-        const products = await Product.find();
+        const products = await Product.find()
+        .select(description -__V)
+        .sort({createdAt: -1});
         res.json(products);
 
     } catch (error) {
