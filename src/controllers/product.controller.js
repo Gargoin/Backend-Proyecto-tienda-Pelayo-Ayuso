@@ -5,7 +5,7 @@ export const getProducts = async (req, res) => {
     try {
 
         const products = await Product.find()
-        .select(description -__V)
+        .select("-__V")
         .sort({createdAt: -1});
         res.json(products);
 
