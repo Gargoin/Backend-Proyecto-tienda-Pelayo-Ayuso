@@ -6,7 +6,15 @@ export const getProducts = async (req, res) => {
 
         const products = await Product.find()
             .select("-__v")
-            .sort({ createdAt: -1 });
+            .sort({ _id:-1 });
+
+                    console.log(
+            products.map(product => ({
+                nombre: product.nombre,
+                createdAt: product.createdAt,
+                id: product._id
+            }))
+        );
 
 
         res.json(products);
