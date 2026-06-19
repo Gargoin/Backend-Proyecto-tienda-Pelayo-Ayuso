@@ -12,7 +12,7 @@
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd backend-proyecto-peliculas-series-jean-paul
+   cd Backend-Proyecto-tienda-Pelayo-Ayuso
    ```
 
 3. Cambiar a la rama "dev":
