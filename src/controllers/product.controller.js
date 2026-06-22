@@ -3,7 +3,7 @@ import Product from "../models/Product.js";
 export const getProducts = async (req, res) => {
 
     try {
-        const { sortby = "nombre", order ="asc"} = req.query;
+        const { sortBy = "nombre", order ="asc"} = req.query;
 
         const products = await Product.find()
             .select("-__v")
