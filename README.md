@@ -3,7 +3,7 @@
 
 ## Instalación
 
-1. Clona el repositori:
+1. Clona el repositorio:
 
     ```bash
     git clone <repository_url>
@@ -43,6 +43,15 @@
    ```bash
    npm run dev
    ```
+   
+
+## Seeders
+
+Si deseas poblar la base de datos con datos de ejemplo, puedes ejecutar el seeder:
+
+```bash
+npm run seed
+```
 
 
 ## Uso
