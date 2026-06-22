@@ -3,7 +3,7 @@
 
 ## Instalación
 
-1. Clona el repositori:
+1. Clona el repositorio:
 
     ```bash
     git clone <repository_url>
@@ -43,6 +43,15 @@
    ```bash
    npm run dev
    ```
+   
+
+## Seeders
+
+Si deseas poblar la base de datos con datos de ejemplo, puedes ejecutar el seeder:
+
+```bash
+npm run seed
+```
 
 
 ## Uso
@@ -61,7 +70,7 @@ response:
    {
     "_id": "6a21...",
     "nombre": "Aria",
-    "descripcion": "Print de ilustración digital de Aria Atreides. Impresión de calidad en papel de 200gr.",
+    "descripcion": "Print de ilustración digital...",
     "categoria": "Print",
     "precio": 19.99,
     "stock": 12,
@@ -86,7 +95,7 @@ status 200:
 {
     "_id": "6a21...",
     "nombre": "Aria",
-    "descripcion": "Print de ilustración digital de Aria Atreides. Impresión de calidad en papel de 200gr.",
+    "descripcion": "Print de ilustración digital...",
     "categoria": "Print",
     "precio": 19.99,
     "stock": 12,
