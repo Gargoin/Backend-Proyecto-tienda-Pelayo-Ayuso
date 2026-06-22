@@ -3,14 +3,22 @@ import Product from "../models/Product.js";
 export const getProducts = async (req, res) => {
 
     try {
-        const { sortBy = "nombre", order ="asc"} = req.query;
+        console.log(req.query);
 
-        const products = await Product.find()
+        const { sortBy = "createdAt", order = "asc", categoria } = req.query;
+        const filter ={};
+
+         if (categoria && categoria !== "Todas las categorías") {
+            filter.categoria = categoria;
+        }
+
+        const products = await Product.find(filter)
             .select("-__v")
             .sort({[sortBy]: order === "desc" ? -1 : 1});
 
 
         res.json(products);
+
     } catch (error) {
 
         res.status(500).json({message: "Error al obtener los productos"});
