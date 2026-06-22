@@ -7,14 +7,19 @@ export const getProducts = async (req, res) => {
 
         const { sortBy = "createdAt", order = "asc", categoria } = req.query;
         const filter ={};
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 6;
+        const skip =(page -1) * limit;
 
-         if (categoria && categoria !== "Todas las categorías") {
+        if (categoria && categoria !== "Todas las categorías") {
             filter.categoria = categoria;
         }
 
         const products = await Product.find(filter)
             .select("-__v")
-            .sort({[sortBy]: order === "desc" ? -1 : 1});
+            .sort({[sortBy]: order === "desc" ? -1 : 1})
+            .skip(skip)
+            .limit(limit);
 
 
         res.json(products);
