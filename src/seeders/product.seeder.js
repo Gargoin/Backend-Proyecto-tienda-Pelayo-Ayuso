@@ -9,92 +9,92 @@ const products = [
   {
     nombre: "Aria",
     stock: 12,
-    precio: 19.99,
-    imagen: "/imgs/600x400-1.png",
-    imagenDetalle: "/imgs/D1.png",
-    descripcion: "Print de ilustración digital de Aria Atreides. Impresión de calidad en papel de 200gr.",
+    precio: 70,
+    imagen: "/imgs/600x400-1.jpg",
+    imagenDetalle: "/imgs/D1.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 70 x 70 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
     categoria: "Print"
   },
   {
-    nombre: "Teclado Mecánico",
+    nombre: "Body electric",
     stock: 10,
-    precio: 89.99,
-    imagen: "/imgs/600x400-2.png",
-    imagenDetalle: "/imgs/D2.png",
-    descripcion: "Teclado mecánico RGB con switches azules y estructura metálica.",
+    precio: 70,
+    imagen: "/imgs/600x400-2.jpg",
+    imagenDetalle: "/imgs/D2.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 50 x 70 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
+    categoria: "Print"
+  },
+  {
+    nombre: "Firefish",
+    stock: 30,
+    precio: 29.50,
+    imagen: "/imgs/600x400-3.jpg",
+    imagenDetalle: "/imgs/D3.jpg",
+    descripcion: "Camiseta premium de edición artística en algodón 100% peinado de 200 g/m². Una prenda de tacto suave, estructura sólida y acabado de calidad superior, con impresión de alta definición diseñada para conservar la intensidad y el detalle del diseño.",
     categoria: "Camiseta"
   },
   {
-    nombre: "Ratón Gaming",
-    stock: 19,
-    precio: 39.99,
-    imagen: "/imgs/600x400-3.png",
-    imagenDetalle: "/imgs/D3.png",
-    descripcion: "Ratón ergonómico con DPI ajustable hasta 16.000.",
-    categoria: "Camiseta"
-  },
-  {
-    nombre: "Monitor 27'' 2K",
+    nombre: "She",
     stock: 1,
-    precio: 249.99,
-    imagen: "/imgs/600x400-4.png",
-    imagenDetalle: "/imgs/D4.png",
-    descripcion: "Monitor IPS de 27 pulgadas con resolución 2560x1440 y 144Hz.",
-    categoria: "Print"
-  },
-  {
-    nombre: "Altavoz Bluetooth",
-    stock: 2,
-    precio: 29.99,
-    imagen: "/imgs/600x400-5.png",
-    imagenDetalle: "/imgs/D5.png",
-    descripcion: "Altavoz portátil resistente al agua con sonido 360°.",
-    categoria: "Print"
-  },
-  {
-    nombre: "Webcam Full HD",
-    stock: 8,
-    precio: 49.99,
-    imagen: "/imgs/600x400-6.png",
-    imagenDetalle: "/imgs/D6.png",
-    descripcion: "Webcam Full HD 1080p con micrófono integrado y enfoque automático.",
-    categoria: "Print"
-  },
-  {
-    nombre: "Disco SSD 1TB",
-    stock: 15,
-    precio: 79.99,
-    imagen: "/imgs/600x400-7.png",
-    imagenDetalle: "/imgs/D7.png",
-    descripcion: "Unidad SSD de 1TB con alta velocidad de lectura y escritura.",
-    categoria: "Print"
-  },
-  {
-    nombre: "Micrófono USB",
-    stock: 6,
-    precio: 69.99,
-    imagen: "/imgs/600x400-8.png",
-    imagenDetalle: "/imgs/D8.png",
-    descripcion: "Micrófono USB profesional ideal para streaming y videollamadas.",
+    precio: 29.50,
+    imagen: "/imgs/600x400-4.jpg",
+    imagenDetalle: "/imgs/D4.jpg",
+    descripcion: "Camiseta premium de edición artística en algodón 100% peinado de 200 g/m². Una prenda de tacto suave, estructura sólida y acabado de calidad superior, con impresión de alta definición diseñada para conservar la intensidad y el detalle del diseño.",
     categoria: "Camiseta"
   },
   {
-    nombre: "Base Refrigeradora",
-    stock: 11,
-    precio: 24.99,
-    imagen: "/imgs/600x400-9.png",
-    imagenDetalle: "/imgs/D9.png",
-    descripcion: "Base con ventiladores silenciosos para mantener tu portátil refrigerado.",
+    nombre: "Astro Machine",
+    stock: 2,
+    precio: 100,
+    imagen: "/imgs/600x400-5.jpg",
+    imagenDetalle: "/imgs/D5.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 115 x 200 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
     categoria: "Print"
+  },
+  {
+    nombre: "Rain City",
+    stock: 0,
+    precio: 70,
+    imagen: "/imgs/600x400-6.jpg",
+    imagenDetalle: "/imgs/D6.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 45 x 70 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
+    categoria: "Print"
+  },
+  {
+    nombre: "the Winged",
+    stock: 15,
+    precio: 90,
+    imagen: "/imgs/600x400-7.jpg",
+    imagenDetalle: "/imgs/D7.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 150 x 80 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
+    categoria: "Print"
+  },
+  {
+    nombre: "Lux Ferre",
+    stock: 6,
+    precio: 95,
+    imagen: "/imgs/600x400-8.jpg",
+    imagenDetalle: "/imgs/D8.jpg",
+    descripcion: "Impresión Fine Art calidad museo de 110 x 150 cm sobre papel de algodón 100% de 310 g/m². Impresión giclée de alta definición con acabado mate y excelente conservación del color.",
+    categoria: "Print"
+  },
+  {
+    nombre: "the Citadel",
+    stock: 11,
+    precio: 29.5,
+    imagen: "/imgs/600x400-9.jpg",
+    imagenDetalle: "/imgs/D9.jpg",
+    descripcion: "Camiseta premium de edición artística en algodón 100% peinado de 200 g/m². Una prenda de tacto suave, estructura sólida y acabado de calidad superior, con impresión de alta definición diseñada para conservar la intensidad y el detalle del diseño.",
+    categoria: "Camiseta"
   },
   {
     nombre: "Hub USB-C",
     stock: 20,
-    precio: 34.99,
-    imagen: "/imgs/600x400-10.png",
-    imagenDetalle: "/imgs/D10.png",
-    descripcion: "Hub USB-C con HDMI, USB 3.0 y lector de tarjetas SD integrado.",
-    categoria: "Print"
+    precio: 29.5,
+    imagen: "/imgs/600x400-10.jpg",
+    imagenDetalle: "/imgs/D10.jpg",
+    descripcion: "Camiseta premium de edición artística en algodón 100% peinado de 200 g/m². Una prenda de tacto suave, estructura sólida y acabado de calidad superior, con impresión de alta definición diseñada para conservar la intensidad y el detalle del diseño.",
+    categoria: "Camiseta"
   }
 ];
 
