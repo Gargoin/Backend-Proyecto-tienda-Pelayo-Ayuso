@@ -40,7 +40,6 @@ const productSchema = new mongoose.Schema({
 
     imagenDetalle: {
         type: String,
-        required: true,
         required: [true, "La imagen del detalle es obligatoria."],
         trim: true
     }

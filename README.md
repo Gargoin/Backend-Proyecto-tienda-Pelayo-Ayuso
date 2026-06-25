@@ -83,6 +83,29 @@ response:
 ]
 ```
 
+#### Paginación
+
+Para obtener una lista paginada de productos, puedes utilizar los parámetros `page` y `limit` en la URL:
+
+```shell
+GET /api/products?page=1&limit=10
+```
+
+#### Ordenamiento
+
+Para ordenar la lista de productos, puedes utilizar el parámetro `sort` en la URL:
+
+```shell
+GET /api/products?sort=precio:asc
+```
+
+#### Filtrado
+Para filtrar los productos por categoría, puedes utilizar el parámetro `categoria` en la URL:
+
+```shell
+GET /api/products?categoria=Print
+```
+
 ### Obtener un producto por ID
 
 metodo GET a `/api/products/:id` para obtener los detalles de un producto específico utilizando su ID.

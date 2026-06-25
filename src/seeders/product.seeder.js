@@ -88,7 +88,7 @@ const products = [
     categoria: "Camiseta"
   },
   {
-    nombre: "Hub USB-C",
+    nombre: "the Tomb",
     stock: 20,
     precio: 29.5,
     imagen: "/imgs/600x400-10.jpg",
