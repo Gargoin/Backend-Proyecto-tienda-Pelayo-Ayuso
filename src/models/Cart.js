@@ -13,7 +13,11 @@ const cartItemSchema = new mongoose.Schema({
         type: Number,
         required: true,
         default: 1,
-        min: 1
+        min: 1,
+        validate: {
+            validator: Number.isInteger,
+            message: "Stock must be an integer",
+        }
     },
 
 

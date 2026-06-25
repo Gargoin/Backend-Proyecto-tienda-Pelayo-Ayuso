@@ -81,7 +81,7 @@ export const addToCart = async (req, res) => {
 
     res.json(cart);
   } catch (error) {
-    console.log(error);
+    
     res.status(500).json({
       message: "Error añadiendo al carrito",
     });
@@ -152,7 +152,7 @@ export const updateCartItem = async (req, res) => {
 
     res.json(cart);
   } catch (error) {
-    console.log(error);
+   
     res.status(500).json({
       message: "Error actualizando carrito",
     });
@@ -198,7 +198,7 @@ export const deleteCartItem = async (req, res) => {
 
     res.json(cart);
   } catch (error) {
-    console.log(error);
+   
     res.status(500).json({
       message: "Error eliminando producto",
     });
@@ -234,7 +234,6 @@ export const clearCart = async (req, res) => {
 
     res.json(cart);
   } catch (error) {
-    console.log(error);
     res.status(500).json({
       message: "Error vaciando carrito",
     });

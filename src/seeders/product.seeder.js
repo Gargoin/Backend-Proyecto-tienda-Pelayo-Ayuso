@@ -106,12 +106,9 @@ const seedProducts = async () => {
         await Product.deleteMany();
         await Product.insertMany(products);
 
-        console.log("Productos cargados correctamente");
         process.exit(0);
 
     } catch (error) {
-
-        console.log(error.message);
         process.exit(1);
 
     }
