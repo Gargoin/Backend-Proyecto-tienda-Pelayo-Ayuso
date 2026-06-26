@@ -29,7 +29,7 @@ const productSchema = new mongoose.Schema({
 
     stock: {
         type: Number,
-        required: [true, "El stock es obligatorio."]
+        required: [true, "El stock es obligatorio."],
     },
 
     imagen: {
@@ -40,7 +40,6 @@ const productSchema = new mongoose.Schema({
 
     imagenDetalle: {
         type: String,
-        required: true,
         required: [true, "La imagen del detalle es obligatoria."],
         trim: true
     }

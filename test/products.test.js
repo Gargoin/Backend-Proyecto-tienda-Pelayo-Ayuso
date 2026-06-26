@@ -13,7 +13,6 @@ describe("CRUD Products", function () {
     this.timeout(5000);
 
     before(async () => {
-        // Crear un usuario 
         User.deleteMany();
 
         const hash = await bcrypt.hash("abc.123-", 10);
