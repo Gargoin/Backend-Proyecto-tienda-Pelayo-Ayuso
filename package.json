@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "test": "mocha --require test/setup.js --exit"
+    "test": "mocha --require test/setup.js --exit",
+    "seed": "node src/seeders/product.seeder.js"
   },
   "author": "Pelayo Ayuso",
   "license": "MIT",

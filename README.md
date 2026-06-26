@@ -159,18 +159,18 @@ Body:
 
 Campos obligatorios:
 
-nombre
-descripcion
-categoria
-precio
-stock
-imagen
-imagenDetalle
+- nombre
+- descripcion
+- categoria
+- precio 
+- stock
+- imagen
+- imagenDetalle
 
 Validaciones:
 
-El nombre debe ser un string.
-El nombre debe tener mínimo 3 caracteres.
+El nombre debe ser un string.\
+El nombre debe tener mínimo 3 caracteres.\
 No se permiten campos obligatorios vacíos.
 
 Response:
@@ -217,8 +217,8 @@ Body:
 
 Validaciones:
 
-El nombre debe ser un string.
-La descripción debe ser un string.
+El nombre debe ser un string.\
+La descripción debe ser un string.\
 Se aplican las validaciones del modelo.
 
 Response:
@@ -309,11 +309,11 @@ Body:
 
 Funcionamiento:
 
-Comprueba que el producto existe.
-Comprueba que hay stock suficiente.
-Reduce el stock del producto.
-Crea el carrito si no existe.
-Si el producto con la misma talla ya existe, aumenta la cantidad.
+Comprueba que el producto existe.\
+Comprueba que hay stock suficiente.\
+Reduce el stock del producto.\
+Crea el carrito si no existe.\
+Si el producto con la misma talla ya existe, aumenta la cantidad.\
 Si no existe, crea un nuevo elemento.
 
 Errores posibles:
@@ -349,12 +349,12 @@ Body:
 
 Permite modificar:
 
-Cantidad.
+Cantidad.\
 Talla.
 
 Si aumenta la cantidad:
 
-Comprueba stock disponible.
+Comprueba stock disponible.\
 Reduce la diferencia del stock.
 
 Si disminuye:
@@ -370,8 +370,8 @@ Elimina un producto del carrito.
 
 Antes de eliminarlo:
 
-Recupera el producto.
-Devuelve al stock la cantidad eliminada.
+Recupera el producto.\
+Devuelve al stock la cantidad eliminada.\
 Elimina el elemento del carrito.
 
 Respuesta:
@@ -389,8 +389,8 @@ Elimina todos los productos del carrito del usuario.
 
 Antes de vaciar:
 
-Recorre todos los productos.
-Devuelve sus cantidades al stock.
+Recorre todos los productos.\
+Devuelve sus cantidades al stock.\
 Limpia los elementos del carrito.
 
 Response:
