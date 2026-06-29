@@ -70,12 +70,12 @@ response:
    {
     "_id": "6a21...",
     "nombre": "Aria",
-    "descripcion": "Print de ilustración digital...",
+    "descripcion": "Impresión Fine Art calidad...",
     "categoria": "Print",
     "precio": 19.99,
     "stock": 12,
-    "imagen": "../src/assets/imgs/600x400-1.png",
-    "imagenDetalle": "../src/assets/imgs/D1.png",
+    "imagen": "../imgs/600x400-1.png",
+    "imagenDetalle": "../imgs/D1.png",
     "__v": 0,
     "createdAt": "2026-06-04T19:16:43.737Z",
     "updatedAt": "2026-06-04T19:16:43.737Z"
@@ -152,8 +152,8 @@ Body:
   "categoria": "Print",
   "precio": 19.99,
   "stock": 12,
-  "imagen": "../src/assets/imgs/600x400-1.png",
-  "imagenDetalle": "../src/assets/imgs/D1.png"
+  "imagen": "../imgs/600x400-1.png",
+  "imagenDetalle": "../imgs/D1.png"
 }
 ```
 
@@ -184,7 +184,9 @@ Status 201:
   "descripcion": "Impresión Fine Art calidad...",
   "categoria": "Print",
   "precio": 19.99,
-  "stock": 12
+  "stock": 12,
+  "imagen": "../imgs/600x400-1.png",
+  "imagenDetalle": "../imgs/D1.png"
 }
 ```
 
@@ -211,24 +213,33 @@ Body:
 ```json
 {
   "nombre": "Aria actualizado",
-  "precio": 24.99,
-  "stock": 20
+  "descripcion": "Impresión Fine Art calidad...",
+  "categoria": "Print",
+  "precio": 19.99,
+  "stock": 12,
+  "imagen": "../imgs/600x400-1.png",
+  "imagenDetalle": "../imgs/D1.png"
 }
 ```
 
 Validaciones:
 
 El nombre debe ser un string.\
-La descripción debe ser un string.\
-Se aplican las validaciones del modelo.
+El nombre debe tener mínimo 3 caracteres.\
+No se permiten campos obligatorios vacíos.\
+La descripción debe tener al menos 30 caracteres.
 
 Response:
 ```json
 {
   "_id": "6a21...",
   "nombre": "Aria actualizado",
-  "precio": 24.99,
-  "stock": 20
+  "descripcion": "Impresión Fine Art calidad...",
+  "categoria": "Print",
+  "precio": 19.99,
+  "stock": 12,
+  "imagen": "../imgs/600x400-1.png",
+  "imagenDetalle": "../imgs/D1.png"
 }
 ```
 
