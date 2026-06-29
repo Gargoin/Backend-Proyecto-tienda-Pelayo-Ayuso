@@ -52,13 +52,23 @@ export const createProduct = async (req, res) => {
     } = req.body;
 
     if (!nombre || nombre.trim() === "" || nombre.length < 3) {
-      return res
+        return res
         .status(422)
         .json({
           message:
-            " El nombre es obligatorio y debe tener al menos 3 caracteres.",
+            "El nombre es obligatorio y debe tener al menos 3 caracteres.",
         });
     }
+
+     if (!descripcion || descripcion.trim() === "" || descripcion.trim().length < 30) {
+        return res
+        .status(422)
+        .json({
+          message:
+            "La descripción es obligatoria y debe tener al menos 30 caracteres.",
+        });
+
+     }
 
     if (
       !nombre ||
@@ -94,6 +104,49 @@ export const updateProduct = async (req, res) => {
       return res.status(422).json({ message: "El nombre debe ser un string" });
     }
 
+    const {
+      nombre,
+      descripcion,
+      categoria,
+      precio,
+      stock,
+      imagen,
+      imagenDetalle,
+    } = req.body;
+
+    if (!nombre || nombre.trim() === "" || nombre.length < 3) {
+      return res
+        .status(422)
+        .json({
+          message:
+            "El nombre es obligatorio y debe tener al menos 3 caracteres.",
+        });
+    }
+
+    if (!descripcion || descripcion.trim() === "" || descripcion.trim().length < 30) {
+        return res
+        .status(422)
+        .json({
+          message:
+            "La descripción es obligatoria y debe tener al menos 30 caracteres.",
+        });
+
+     }
+
+    if (
+      !nombre ||
+      !descripcion ||
+      !categoria ||
+      !precio ||
+      !stock ||
+      !imagen ||
+      !imagenDetalle
+    ) {
+      return res
+        .status(422)
+        .json({ message: "Todos los campos son obligatorios" });
+    }
+
     if (typeof req.body.descripcion != "string") {
       return res
         .status(422)
@@ -107,6 +160,10 @@ export const updateProduct = async (req, res) => {
 
     res.json(product);
   } catch (error) {
+    if (error.name == "validationError") {
+      return res.status(422).json({ message: error.message });
+    }
+
     res.status(500).json({ message: "Error al actualizar el producto" });
   }
 };
